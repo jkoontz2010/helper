@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
+// REVIEW: unusused dependency, clientUpdate. consider using a linter to catch this kind of minor detail for you.
 import { clientUpdate, clientCreate } from '../actions';
 import { Card, CardSection, Button } from './common';
 import ClientForm from './ClientForm';

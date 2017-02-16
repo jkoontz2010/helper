@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { View, Text, Picker } from 'react-native';
 import { connect } from 'react-redux';
-import { clientUpdate } from '../actions';
+
+// REVIEW: naming. import from '../actions' is a fun way to be lazy, but it doesn't help you locate clientUpdate when you add more
+// action files. or any future files.
+import { clientUpdate } from '../actions'; 
 import { CardSection, Input } from './common';
 
 
